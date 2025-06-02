@@ -47,7 +47,7 @@ img {
 }
 
 .container {
-  max-width: var(--container-width);
+  max-width: 1158px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -64,8 +64,27 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding: 24px 0;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.logo-link {
+  margin-right: 76px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 /* Logo */
@@ -111,6 +130,10 @@ img {
 }
 
 /* Contacts */
+.contacts {
+  font-style: normal;
+}
+
 .contacts-block {
   font-style: normal;
 }
