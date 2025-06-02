@@ -170,35 +170,62 @@ img {
 }
 
 /* Features */
-.features-section {
-  background-color: var(--color-bg-light);
-  padding: var(--section-padding) 0;
+.features-section,
+.team-section,
+.portfolio-section {
+  padding: 120px 0;
 }
 
-.features-list {
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.features-list,
+.team-list,
+.portfolio-list {
   display: flex;
   gap: 24px;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
-.features-item {
-  flex-basis: calc((100% - 72px) / 4);
-  background-color: var(--color-white);
-  padding: 24px;
+.features-item,
+.team-item,
+.portfolio-item {
+  width: calc((100% - 72px) / 4);
+  box-sizing: border-box;
 }
 
-.features-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: var(--color-dark);
+.features-title,
+.team-name,
+.portfolio-name {
   margin-bottom: 8px;
+  font-weight: 700;
+  font-family: 'Raleway', sans-serif;
+  text-transform: none;
 }
 
-.features-text {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
+.features-text,
+.team-role,
+.portfolio-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
 }
 
 /* Team */
