@@ -1,3 +1,4 @@
+/* Variables */
 :root {
   --color-primary: #4d5ae5;
   --color-accent: #404bbf;
@@ -18,13 +19,13 @@ body {
   padding: 0;
 }
 
-h1
-h2
-h3
-h4
-h5
-h6
-p
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
 ul {
   margin: 0;
   padding: 0;
@@ -45,9 +46,9 @@ img {
 
 /* Layout */
 .container {
-  width: 1158px;
+  width: var(--container-width);
   margin: 0 auto;
-  padding: 0 15px 0 15px;
+  padding: 0 15px;
   display: flex;
   align-items: center;
 }
@@ -62,11 +63,9 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding: 24px 0;
 }
 
-/* Logo */
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -99,7 +98,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-dark);
-  padding: 24px 0 24px;
+  padding: 24px 0;
 }
 
 .nav-link:hover,
@@ -240,7 +239,7 @@ img {
 }
 
 .portfolio-name {
-  margin: 32px 0 8px 0;
+  margin: 32px 0 8px;
 }
 
 .portfolio-text {
@@ -255,13 +254,14 @@ img {
 }
 
 .footer .container {
-  display: inline-block;
+  display: block;
   flex-direction: column;
   align-items: flex-start;
-  margin-bottom: 16px;
 }
 
 .footer-logo {
+  display: inline-block;
+  margin-bottom: 16px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -269,7 +269,6 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color-primary);
-  margin-bottom: 16px;
 }
 
 .footer-logo-accent {
@@ -284,6 +283,16 @@ img {
   max-width: 264px;
 }
 
+/* Section Title */
+.section-title {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--color-dark);
+  margin-bottom: 72px;
+}
+
 /* Visually Hidden */
 .visually-hidden {
   position: absolute;
@@ -296,14 +305,4 @@ img {
   clip-path: inset(100%);
   clip: rect(0, 0, 0, 0);
   overflow: hidden;
-}
-
-/* Section Title */
-.section-title {
-  font-size: 36px;
-  line-height: 1.11;
-  text-align: center;
-  letter-spacing: 0.02em;
-  color: var(--color-dark);
-  margin-bottom: 72px;
 }
