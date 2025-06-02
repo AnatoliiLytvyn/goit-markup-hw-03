@@ -10,7 +10,7 @@
   --section-padding: 120px;
 }
 
-/* Reset */
+/* Reset & base */
 body {
   font-family: "Roboto", sans-serif;
   background-color: var(--color-white);
@@ -19,13 +19,13 @@ body {
   padding: 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
+h1
+h2
+h3
+h4
+h5
+h6
+p
 ul {
   margin: 0;
   padding: 0;
@@ -42,18 +42,19 @@ a {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
-/* Layout */
 .container {
-  width: var(--container-width);
-  margin: 0 auto;
-  padding: 0 15px;
-  display: flex;
-  align-items: center;
+  max-width: var(--container-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
 }
 
-/* Header */
 .page-header {
   border-bottom: 1px solid #e7e9fc;
   background-color: var(--color-white);
@@ -63,9 +64,11 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 24px 0;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
+/* Logo */
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -75,13 +78,13 @@ img {
   text-transform: uppercase;
   color: var(--color-primary);
   margin-right: 76px;
+  /* Відступ від логотипа */
 }
 
 .header-logo-accent {
   color: var(--color-dark);
 }
 
-/* Navigation */
 .nav {
   display: flex;
   align-items: center;
@@ -98,7 +101,8 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-dark);
-  padding: 24px 0;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .nav-link:hover,
@@ -128,74 +132,24 @@ img {
   color: var(--color-accent);
 }
 
-/* Hero */
-.hero {
-  background-color: var(--color-dark);
+/* Section generic styles - B14, B15 */
+.section {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+
+/* Section title */
+.section-title {
+  font-size: 36px;
+  line-height: 1.11;
   text-align: center;
-  padding: 188px 0;
-  color: var(--color-white);
-}
-
-.hero-title {
-  font-size: 56px;
-  line-height: 1.07;
   letter-spacing: 0.02em;
-  margin-bottom: 48px;
-  max-width: 496px;
-  margin-left: auto;
-  margin-right: auto;
+  color: var(--color-dark);
+  margin-bottom: 72px;
+  /* B5 */
 }
 
-.hero-button {
-  display: block;
-  min-width: 169px;
-  height: 56px;
-  background-color: var(--color-primary);
-  color: var(--color-white);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  text-align: center;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  padding: 16px 32px;
-  margin: 0 auto;
-}
-
-.hero-button:hover,
-.hero-button:focus {
-  background-color: var(--color-accent);
-}
-
-/* Features */
-.features-section,
-.team-section,
-.portfolio-section {
-  padding: 120px 0;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
-}
-
-.features-list,
-.team-list,
+/* Portfolio section */
 .portfolio-list {
   display: flex;
   gap: 24px;
@@ -205,71 +159,25 @@ img {
   list-style: none;
 }
 
-.features-item,
-.team-item,
-.portfolio-item {
-  width: calc((100% - 72px) / 4);
-  box-sizing: border-box;
-}
-
-.features-title,
-.team-name,
-.portfolio-name {
-  margin-bottom: 8px;
-  font-weight: 700;
-  font-family: 'Raleway', sans-serif;
-  text-transform: none;
-}
-
-.features-text,
-.team-role,
-.portfolio-text {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-}
-
-/* Team */
-.team-section {
-  background-color: var(--color-bg-light);
-  padding: var(--section-padding) 0;
-}
-
-.team-list {
-  display: flex;
-  gap: 24px;
-}
-
-.team-item {
-  background-color: var(--color-white);
-  text-align: center;
-  padding: 32px 16px;
-  border-radius: 0 0 4px 4px;
-}
-
-.team-name {
-  margin-top: 32px;
-  margin-bottom: 8px;
-}
-
-/* Portfolio */
-.portfolio-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-}
-
 .portfolio-item {
   flex-basis: calc((100% - 48px) / 3);
   background-color: var(--color-white);
   border-bottom: 1px solid #e7e9fc;
+  /* B16 */
   padding-bottom: 16px;
+  /* B5 */
+  box-sizing: border-box;
 }
 
 .portfolio-name {
-  margin: 32px 0 8px;
+  margin: 32px 0 8px 0;
+  font-weight: 700;
+  font-family: 'Raleway', sans-serif;
 }
 
 .portfolio-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
   margin: 0;
 }
 
