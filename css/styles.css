@@ -45,9 +45,11 @@ img {
 
 /* Layout */
 .container {
-  width: var(--container-width);
+  width: 1158px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 15px 0 15px;
+  display: flex;
+  align-items: center;
 }
 
 /* Header */
@@ -62,10 +64,6 @@ img {
   align-items: center;
   padding-top: 24px;
   padding-bottom: 24px;
-}
-
-.page-header-container.container {
-  /* залишається container + flex */
 }
 
 /* Logo */
@@ -101,7 +99,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-dark);
-  padding: 24px 0;
+  padding: 24px 0 24px;
 }
 
 .nav-link:hover,
@@ -175,6 +173,7 @@ img {
 /* Features */
 .features-section {
   background-color: var(--color-bg-light);
+  padding: var(--section-padding) 0;
 }
 
 .features-list {
@@ -206,6 +205,7 @@ img {
 /* Team */
 .team-section {
   background-color: var(--color-bg-light);
+  padding: var(--section-padding) 0;
 }
 
 .team-list {
