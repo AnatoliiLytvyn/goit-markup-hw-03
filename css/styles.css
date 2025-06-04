@@ -17,6 +17,103 @@ body {
   color: #333;
 }
 
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e7e9fc;
+  background-color: #ffffff;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #4d5ae5;
+}
+
+.nav-list {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #2e2f42;
+  font-weight: 500;
+  padding: 24px 0;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #404bbf;
+}
+
+.contacts {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.contact-link {
+  text-decoration: none;
+  color: #434455;
+  font-style: normal;
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  color: #404bbf;
+}
+
+/* Fourth Section Styles */
+.fourth-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.fourth-title {
+  margin-bottom: 72px;
+}
+
+.fourth-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.fourth-item {
+  width: calc((100% - 48px) / 3);
+}
+
+.fourth-content {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+
+.fourth-item-title {
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.fourth-item-text {
+  text-align: left;
+}
+
 .container {
   width: 90%;
   max-width: 1200px;
@@ -120,15 +217,6 @@ body {
 .portfolio-section {
   padding-top: 120px;
   padding-bottom: 120px;
-}
-
-.container {
-  width: 100;
-  max-width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .portfolio-title {
