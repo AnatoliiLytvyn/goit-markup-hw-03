@@ -215,6 +215,45 @@ ol {
   color: var(--color-text);
 }
 
+/* Hero Section Styles */
+.hero-section {
+  padding: 188px 0;
+  background-color: var(--color-dark);
+  text-align: center;
+}
+
+.hero-title {
+  color: var(--color-white);
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  max-width: 496px;
+  margin: 0 auto 48px;
+}
+
+.hero-button {
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  margin: 0 auto;
+  border: none;
+  background-color: var(--color-primary);
+  border-radius: 4px;
+  color: var(--color-white);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--color-accent);
+}
+
 /* Footer */
 .site-footer {
   padding: 100px 0;
