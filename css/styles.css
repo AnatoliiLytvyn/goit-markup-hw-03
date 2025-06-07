@@ -123,6 +123,10 @@ ol {
   width: calc((100% - 72px) / 4);
 }
 
+.features-list li:first-child {
+  border-radius: 0px 0px 4px 4px;
+}
+
 .features-title {
   margin-bottom: 8px;
   font-size: 20px;
