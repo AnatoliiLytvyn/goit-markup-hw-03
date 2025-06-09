@@ -45,7 +45,6 @@ ol {
 
 /* Header */
 .header {
-  padding: 24px 0;
   border-bottom: 1px solid #e7e9fc;
 }
 
@@ -62,7 +61,7 @@ ol {
 
 .logo {
   font-family: "Raleway", sans-serif;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 700;
   text-decoration: none;
   color: var(--color-primary);
@@ -82,7 +81,11 @@ ol {
   text-decoration: none;
   color: var(--color-dark);
   font-weight: 500;
+  font-size: 16px;
+  white-space: nowrap;
+  line-height: 1.5;
   padding: 24px 0;
+  display: block;
 }
 
 .nav-link:hover,
@@ -107,6 +110,10 @@ ol {
 .contact-link:hover,
 .contact-link:focus {
   color: var(--color-accent);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  white-space: nowrap;
 }
 
 /* Features Section */
@@ -117,20 +124,21 @@ ol {
 .features-list {
   display: flex;
   gap: 24px;
+  line-height: 1.5;
+  letter-spacing: normal;
 }
 
 .features-item {
   width: calc((100% - 72px) / 4);
 }
 
-.features-list li:first-child {
-  border-radius: 0px 0px 4px 4px;
-}
-
 .features-title {
   margin-bottom: 8px;
   font-size: 20px;
   font-weight: 500;
+  line-height: 1.2;
+  white-space: 0.02em;
+  letter-spacing: normal;
   color: var(--color-dark);
 }
 
@@ -180,6 +188,8 @@ ol {
 .team-position {
   font-size: 16px;
   color: var(--color-text);
+  line-height: 1.5;
+  white-space: normal;
 }
 
 /* Portfolio Section */
@@ -211,6 +221,8 @@ ol {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
+  white-space: nowrap;
+  line-height: 1.5;
   column-gap: 24px;
   row-gap: 48px;
 }
@@ -218,7 +230,6 @@ ol {
 .portfolio-item {
   width: calc((100% - 48px) / 3);
   background-color: var(--color-white);
-  border-radius: 4px;
   overflow: hidden;
 }
 
@@ -232,12 +243,16 @@ ol {
   margin-bottom: 8px;
   font-size: 20px;
   font-weight: 500;
+  line-height: 1.2;
+  white-space: nowrap;
   color: var(--color-dark);
 }
 
 .portfolio-text {
   font-size: 16px;
   color: var(--color-text);
+  line-height: 1.5;
+  white-space: normal;
 }
 
 /* Hero Section Styles */
@@ -289,6 +304,8 @@ ol {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: nowrap;
   text-decoration: none;
   color: var(--color-primary);
   display: inline-block;
@@ -302,6 +319,7 @@ ol {
 .footer-text {
   font-size: 16px;
   line-height: 1.5;
+  letter-spacing: nowrap;
   color: var(--color-bg-light);
   max-width: 264px;
 }
